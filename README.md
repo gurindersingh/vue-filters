@@ -1,4 +1,5 @@
 # Vue Filters
+General vue filters
 
 ### Avaiable filters
     capitalize
