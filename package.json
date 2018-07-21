@@ -19,7 +19,7 @@
     "lint": "vue-cli-service lint",
     "pack": "vue-cli-service build --target lib --name VueFilters ./src/filters/index.js"
   },
-  "main": "./dist/VueFilters.common.js",
+  "main": "dist/VueFilters.common.js",
   "files": [
     "dist/*.js",
     "dist/*.js.map",
@@ -30,13 +30,13 @@
     "*.md"
   ],
   "dependencies": {
-    "vue": "^2.5.16",
-    "date-fns": "^1.29.0"
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.5",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.5",
     "@vue/cli-service": "^3.0.0-rc.5",
+    "date-fns": "^1.29.0",
     "vue-template-compiler": "^2.5.16"
   },
   "eslintConfig": {

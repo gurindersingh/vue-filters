@@ -197,17 +197,17 @@ const phone = (phone, type = 'us') => {
 // CONCATENATED MODULE: ./src/filters/index.js
 
 const VueFilters = {
-  install(vue) {
-    vue.filter('capitalize', capitalize);
-    vue.filter('append', append);
-    vue.filter('truncate', truncate);
-    vue.filter('substr', substr);
-    vue.filter('strCount', strCount);
-    vue.filter('prettyBytes', prettyBytes);
-    vue.filter('formatDate', formatDate);
-    vue.filter('timeAgo', timeAgo);
-    vue.filter('moneyInDollars', moneyInDollars);
-    vue.filter('phone', phone);
+  install(Vue) {
+    Vue.filter('capitalize', capitalize);
+    Vue.filter('append', append);
+    Vue.filter('truncate', truncate);
+    Vue.filter('substr', substr);
+    Vue.filter('strCount', strCount);
+    Vue.filter('prettyBytes', prettyBytes);
+    Vue.filter('formatDate', formatDate);
+    Vue.filter('timeAgo', timeAgo);
+    Vue.filter('moneyInDollars', moneyInDollars);
+    Vue.filter('phone', phone);
   }
 
 };
