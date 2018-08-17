@@ -114,9 +114,7 @@ const capitalize = value => {
   value = value.toString();
   return value.charAt(0).toUpperCase() + value.slice(1);
 };
-
 const append = (text, suffix = '...') => text + suffix;
-
 const truncate = (text, length, clamp) => {
   clamp = clamp || '...';
   length = length || 30;
@@ -131,20 +129,17 @@ const truncate = (text, length, clamp) => {
   tcText = tcText.slice(0, last);
   return tcText + clamp;
 };
-
 const substr = (text, length, clamp) => {
   clamp = clamp || '...';
   length = length || 30;
   return text.substr(0, length) + clamp;
 };
-
 const strCount = (text, limit, clamp) => {
   let char = text ? text.length : ''.length;
   limit = limit ? limit : 70;
   let remaining = limit - char < 0 ? 0 : limit - char;
   return `Maximum of ${limit} characters ( ${remaining} Available)`;
 };
-
 const prettyBytes = (bytes, decimals, kib = false) => {
   if (bytes === 0) return '0 Bytes';
   if (isNaN(parseFloat(bytes)) && !isFinite(bytes)) return 'Not an number';
@@ -157,15 +152,11 @@ const prettyBytes = (bytes, decimals, kib = false) => {
 
 
 
-
-
 const formatDate = (date, formatTo, $null = '---') => {
   if (!date) return $null;
   let parsedDate = parse_default()(date);
   return format_default()(parsedDate, formatTo);
 };
-
-
 
 const timeAgo = date => {
   if (!date) return '---';
@@ -173,18 +164,14 @@ const timeAgo = date => {
   return distance_in_words_to_now_default()(parsedDate);
 }; // Money formating
 
-
 const moneyInDollars = (money, symbol = 'CAD$') => {
   money = (money / 100).toFixed(2);
   return `${symbol} ${money}`;
 }; // Phone formating
 
-
 const phone = (phone, type = 'us') => {
   return phone.replace(/[^0-10]/g, '').replace(/(\d{1})(\d{3})(\d{3})(\d{4})/, '+($1).$2.$3.$4');
 };
-
-
 // CONCATENATED MODULE: ./src/filters/index.js
 
 const VueFilters = {
