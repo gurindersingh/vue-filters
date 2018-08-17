@@ -19,7 +19,7 @@
     "lint": "vue-cli-service lint",
     "pack": "vue-cli-service build --target lib --name VueFilters ./src/filters/index.js"
   },
-  "main": "src/filters/index.js",
+  "main": "dist/VueFilters.common.js",
   "files": [
     "dist/*.js",
     "dist/*.js.map",
